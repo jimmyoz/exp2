@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <title>Home</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/layout.css?v=3" />
+     <script src="js/config.js"></script>
+     <script src="js/web3/dist/web3.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/base.js"></script> 
+    <script type="text/javascript" src="js/index.js?v=13"></script>
+ 
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css" rel="stylesheet" class="jsx-3976988100">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js'></script>
+      <style>
+        .mapboxgl-ctrl {
+            display: none !important;
+        }
+          .mapboxgl-popup mapboxgl-popup-anchor-bottom{
+              max-width:500px !important;
+          }
+          .mapboxgl-popup-content {
+              min-width: 480px;
+              min-height: 380px;
+          }
+            .mapboxgl-popup-content .title {
+                font-family: Verdana;
+                font-size: 10pt;
+                line-height: 1.1;
+                margin-right: 20px;
+                font-weight: bold;
+                padding: 10px;
+                color: #333;
+            }
+          .mapboxgl-popup-content
+          {
+              border-radius:15px !important;
+          }
+          .mapboxgl-popup-close-button {
+              border-radius: 0 15px 0 0 !important;
+          }
+    </style>
+</head>
+<body class="home">
+    <!--header-->
+    <div class="header">
+        <div class="container p_r">
+            <div class="logo pull-left Bold">
+                <a href="index.html">IfiChain Explorer</a>
+            </div>
+            <div class="pull-right flex flex-align-center">
+                <div class="nav flex Medium transition">
+                    <a href="index.html" class="cur">Home</a>
+                    <a href="transactions.html">Transactions</a>
+                    <a href="blocks.html">Blocks</a>
+                    <a href="signers.html">Signers</a>
+					<a href="nodes.html">Nodes</a>
+                    <!--<a href="" >Charts</a>-->
+                </div>
+                <div class="menu-btn"></div>
+                <div class="search-content transition flex flex-align-center bgfff">
+                    <input type="text" id="searchKey" value="" class="flex-1" placeholder="search...." /><input type="submit" id="submitSearch" name="" />
+                </div>
+                <a href="javascript:void(0);" class="search transition"></a>
+            </div>
+            <div class="bgDiv"></div>
+        </div>
+    </div>
+    <!--header end-->
+    <div class="map-text bgfff">
+        <div class="text-center Bold title">
+            Statistics
+        </div>
+        <div class="flex txt Bold">
+            <div class="text-center flex-1">
+                Block Height<br>
+                <span id="blocks">&nbsp;</span>
+            </div>
+            <div class="text-center flex-1">
+                Transactions<br>
+                            <span id="transactions">&nbsp;</span>
+            </div>
+        </div>
+        <div class="flex txt Bold">
+            <div class="text-center flex-1">
+                Signers<br>
+                       <span id="signers">&nbsp;</span>
+            </div>
+            <div class="text-center flex-1">
+                Node Machines<br>
+                             <span id="nodes">&nbsp;</span>
+            </div>
+        </div>
+        <div class="flex txt Bold">
+            <div class="text-center flex-1">
+                Active Address<br>
+                              <span id="wallets">&nbsp;</span>
+            </div>
+            <div class="text-center flex-1">
+                TPS<br>
+                   <span id="tps">&nbsp;</span>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div id='map' class="map"></div>
+    <script type="text/javascript" src="js/map.js"></script>
+    
+
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="pull-left Bold txt">
+                IfiChain Explorer @2021 <span id="info" style=" font-size:12px; color:#fff"></span>
+            </div>
+            <div class="sns flex pull-right">
+                <a href="" class="email di_in"></a>
+                <a href="" class="t di_in"></a>
+                <a href="" class="m di_in"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--footer end-->
+    <!--本页面用的js文件位置 -->
+    <!--本页面用的js文件位置 end-->
+
+
+</body>
+</html>

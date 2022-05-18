@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <title>Block</title>
+ 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/layout.css?v=3" />
+	<script src="js/config.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/block.js?v=11"></script>
+</head>
+<body class="bg">
+
+<!--header-->
+    <div class="header">
+        <div class="container p_r">
+            <div class="logo pull-left Bold">
+                <a href="index.html">IfiChain Explorer</a>
+            </div>
+            <div class="pull-right flex flex-align-center">
+                <div class="nav flex Medium transition">
+                    <a href="index.html">Home</a>
+                    <a href="transactions.html">Transactions</a>
+                    <a href="blocks.html" class="cur">Blocks</a>
+                    <a href="signers.html">Signers</a>
+					<a href="nodes.html">Nodes</a>
+                    <!--<a href="">Charts</a>-->
+                </div>
+                <div class="menu-btn"></div>
+                <div class="search-content transition flex flex-align-center bgfff">
+                    <input type="text" id="searchKey" value="" class="flex-1" placeholder="search...." /><input type="submit" id="submitSearch" name="" />
+                </div>
+                <a href="javascript:void(0);" class="search transition"></a>
+            </div>
+            <div class="bgDiv"></div>
+        </div>
+    </div>
+<!--header end-->
+<div class="container">
+
+    <div class="public-content bgfff"  >
+        <div class="flex flex-pack-justify flex-align-center table-tit">
+            <ul class="nav-tabs Bold">
+                <li class=""><a style="cursor:initial;font-size:24px" id="blockNumber">Block </a></li>
+            </ul>
+        </div>
+
+        <div class="tab-content">
+            <div class="tab-pane fade in active">
+                <table class="table table-bordered Bold">
+                    <tbody>
+                        <tr>
+                            <th class="Bold">Block Height</th>
+                            <td id="blockHeight"></td>
+                        </tr>
+                        <tr>
+                            <th class="Bold">Timestamp</th>
+                            <td id="timestamp"></td>
+                        </tr>
+                        <tr>
+                            <th class="Bold">Transactions</th>
+                            <td id="transactions"></td>
+                        </tr>
+                        <tr>
+                            <th class="Bold">Signed By</th>
+                            <td id="signedby"></td>
+                        </tr>
+                        <tr>
+                            <th class="Bold">Difficulty</th>
+                            <td id="difficalty"></td>
+                        </tr>
+                        <tr>
+                            <th class="Bold">Total Difficulty</th>
+                            <td id="totalDifficulty"></td>
+                        </tr>
+                        <tr>
+                            <th class="Bold">Size</th>
+                            <td id="size"></td>
+                        </tr>
+                        <tr>
+                            <th class="Bold">Extra Data</th>
+                            <td id="extraData" style="word-break: break-all;"></td>
+                        </tr>
+                        <tr>
+                            <th class="Bold">Hash</th>
+                            <td id="hash"></td>
+                        </tr>
+                        <tr>
+                            <th class="Bold">Parent Hash</th>
+                            <td id="parentHash"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="search-null flex flex-align-center" style="display:none;">
+        <div class="text-content flex-1">
+            <div class="title Bold">
+                Search Not Found
+            </div>
+            <div class="txt">
+                the string you entered was: XXXXXX <br>
+                there is no result matched
+            </div>
+            <a href="" class="di_in text-uppercase text-center Bold">home</a>
+        </div>
+        <div class="pic">
+            <img src="images/search-null.png">
+        </div>
+    </div>
+
+</div>
+
+
+<!--footer-->
+<div class="footer">
+	<div class="container">
+		<div class="pull-left Bold txt">
+			Infinity Explorer @2021
+		</div>
+		<div class="sns flex pull-right">
+			<a href="" class="email di_in"></a>
+			<a href="" class="t di_in"></a>
+			<a href="" class="m di_in"></a>
+		</div>
+	</div>
+</div>
+
+<!--footer end-->
+
+<!--本页面用的js文件位置 -->
+
+
+<!--本页面用的js文件位置 end-->
+
+
+</body>
+</html>

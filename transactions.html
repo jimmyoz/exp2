@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="renderer" content="webkit">
+<title>Transactions</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/layout.css?v=3"/>
+<script src="js/config.js"></script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/respond.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/transactions.js?v=11"></script>
+</head>
+<body class="bg">
+
+<!--header-->
+<div class="header">
+	<div class="container p_r">
+        <div class="logo pull-left Bold">
+            <a href="index.html">IfiChain Explorer</a>
+        </div>
+        <div class="pull-right flex flex-align-center">
+            <div class="nav flex Medium transition">
+                <a href="index.html">Home</a>
+                <a class="cur" href="transactions.html" >Transactions</a>
+                <a href="blocks.html">Blocks</a>
+                <a href="signers.html">Signers</a>
+				<a href="nodes.html">Nodes</a>
+                <!--<a href="">Charts</a>-->
+            </div>
+            <div class="menu-btn"></div> 
+            <div class="search-content transition flex flex-align-center bgfff">
+                <input type="text" id="searchKey" value="" class="flex-1" placeholder="search...." /><input type="submit" id="submitSearch" name="" />
+            </div> 
+            <a href="javascript:void(0);" class="search transition"></a>
+        </div>
+		<div class="bgDiv"></div>
+	</div>
+</div>
+ 
+<!--header end-->
+<div class="container"> 
+	<div class="public-content bgfff">
+		<div class="flex flex-pack-justify flex-align-center table-tit">
+			<ul class="nav-tabs Bold">
+				<li class="" ><a style="cursor:initial;font-size:24px" id="transactionsCount">Transactions</a></li>
+			</ul>
+            <ul class="pagination pagination-lg flex">
+                <li><a href="#" onclick="goPage('top')">&laquo;</a></li>
+                <li><a href="#" onclick="goPage('up')">&laquo;</a></li>
+                <li class="num flex flex-align-center flex-pack-center Bold"><span class="pageInfo">1/100000</span></li>
+                <li><a href="#" onclick="goPage('down')">&raquo;</a></li>
+                <li style="margin-right:0px !important"><a href="#" onclick="goPage('last')">&raquo;</a></li>
+            </ul>
+		</div> 
+		<div class="tab-content">
+			<div class="tab-pane fade in active" id="home">
+				<table class="table Bold">
+					<thead>
+						<tr>
+							<th>Tx Hash</th>
+							<th>Block</th>
+							<th>Age</th> 
+							<th>From</th>
+							<th>To</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody id="transactions_table_tbody">
+						 
+					</tbody>
+				</table>
+				<div class="flex page">
+                    <ul class="pagination pagination-lg flex pagefoot" style=" padding-top:0px;">
+                        <li><a href="#" onclick="goPage('top')">&laquo;</a></li>
+                        <li><a href="#" onclick="goPage('up')">&laquo;</a></li>
+                        <li class="num flex flex-align-center flex-pack-center Bold"><span class="pageInfo">1/100000</span></li>
+                        <li><a href="#" onclick="goPage('down')">&raquo;</a></li>
+                        <li style="margin-right:0px !important"><a href="#" onclick="goPage('last')" >&raquo;</a></li>
+                    </ul>
+				</div>
+				
+			</div>
+			
+		</div> 
+	</div>
+	
+	
+</div>
+
+
+<!--footer-->
+<div class="footer">
+	<div class="container">
+		<div class="pull-left Bold txt">
+			Infinity Explorer @2021
+		</div>
+		<div class="sns flex pull-right">
+			<a href="" class="email di_in"></a>
+			<a href="" class="t di_in"></a>
+			<a href="" class="m di_in"></a>
+		</div>
+	</div>
+</div>
+
+<!--footer end-->
+
+<!--本页面用的js文件位置 -->
+
+
+<!--本页面用的js文件位置 end-->
+
+
+</body>
+</html>
